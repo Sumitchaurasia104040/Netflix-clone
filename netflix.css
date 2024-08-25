@@ -1,0 +1,504 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+
+
+
+.childrenjoy {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  
+  position: absolute;
+  z-index: -1;
+  
+  width: 100vw;
+  height: 210px;
+  
+  background-color:rgb(0, 0, 0);
+  }
+  
+  .ball1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 50%;
+  background-color: rgb(211, 12, 12);
+  border-radius: 70px;
+  width: 44px;
+  height: 44px;
+  animation: animateX 5s linear infinite ,
+  animateY 1s ease-out infinite alternate;
+  
+  }
+  .ball5 {
+  opacity: 50%;
+  
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  background-color: rgb(24, 186, 235);
+  border-radius: 70px;
+  width: 40px;
+  height: 40px;
+  animation: animateX 4s linear infinite,
+  animateY 1s ease-out infinite alternate-reverse;
+  }
+  .ball2 {
+  opacity: 20%;
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+  background-color: rgb(251, 255, 12);
+  border-radius: 70px;
+  width: 50px;
+  height: 50px;
+  animation: translateX1 6s linear infinite,
+  translateY1 1s ease-out infinite alternate-reverse;
+  
+  }
+  .ball6 {
+  opacity: 50%;
+  
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  
+  background-color: rgb(255, 0, 212);
+  border-radius: 70px;
+  width: 40px;
+  height: 40px;
+  animation: translateX1 3.7s linear infinite,
+  translateY1 1s ease-out infinite alternate-reverse;
+  }
+  .ball3 {
+  opacity: 30%;
+  position: absolute;
+  
+  left: 0;
+  background-color: rgb(68, 236, 16);
+  border-radius: 70px;
+  width: 50px;
+  height: 50px;
+  animation: animateX3 6s linear infinite,
+  animateY3 1s ease-out infinite alternate-reverse;
+  }
+  
+  .ball7{
+  opacity: 50%;
+  position: absolute;
+  
+  left: 400px;
+  background-color: rgb(112, 35, 255);
+  border-radius: 70px;
+  width: 35px;
+  height: 35px;
+  animation: animateX3 7s linear infinite,
+  animateY3 1s ease-out infinite alternate-reverse;
+  }
+  
+  .ball4 {
+  opacity: 50%;
+  position: absolute;
+  
+  right: 0;
+  background-color: rgb(252, 134, 0);
+  border-radius: 70px;
+  width: 25px;
+  height: 25px;
+  animation: translateX4 6s linear infinite,
+  translateY4 1s ease-out infinite alternate-reverse;
+  }
+  
+  .ball8{
+  opacity: 50%;
+  position: absolute;
+  
+  right: 100px;
+  background-color: rgb(0, 201, 174);
+  border-radius: 70px;
+  width: 20px;
+  height: 20px;
+  animation: translateX4 9s linear infinite,
+  translateY4 1s ease-out infinite alternate-reverse;
+  }
+  
+  
+  @keyframes animateX {
+  from {
+  left: 0;
+  }
+  to {
+  left: 100%;
+  }
+  
+  }
+  @keyframes animateY {
+  from {
+  bottom: 0;
+  }
+  to {
+  bottom: 100%;
+  }
+  
+  
+  }
+  
+  @keyframes translateX1 {
+  from {
+  right: 0;
+  }
+  to {
+  right: 100%;
+  }
+  }
+  @keyframes translateY1 {
+  from {
+  bottom: 0;
+  }
+  to {
+  bottom: 100%;
+  }
+  }
+  
+  @keyframes animateX3 {
+  from {
+  left: 0;
+  }
+  to {
+  left: 100%;
+  }
+  }
+  @keyframes animateY3 {
+  from {
+  bottom: 100%;
+  }
+  to {
+  bottom: 0;
+  }
+  }
+  
+  @keyframes translateX4 {
+  from {
+  right: 0;
+  }
+  to {
+  right: 100%;
+  }
+  }
+  @keyframes translateY4 {
+  from {
+  bottom: 100%;
+  }
+  to {
+  bottom: 0;
+  }
+  }
